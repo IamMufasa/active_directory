@@ -1,0 +1,19 @@
+{
+    "groups" : [
+        {
+            "name": "Engineering"
+        }
+    ],
+    
+    "users": [
+        {
+            "first_name": "Edward",
+            "last_name": "Harley",
+            "username": "eharley",
+            "password": "supersecure",
+            "groups": [
+                "Engineering"
+            ]
+        }
+    ]
+}

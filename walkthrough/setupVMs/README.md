@@ -1,6 +1,6 @@
 # Setting up the Domain Controller
 
-1. Use `sconfig` or a managemnet client to configure domain controller:
+1. Use `sconfig` or a managemnet client to configure the domain controller:
     - Change the hostname
     - Change the IP address to static
     - Change the DNS server to our own IP address
@@ -20,6 +20,26 @@ import-Module ADDSDeployment
 install-ADDSForest
 ```
 
+# Setting up Management Client
+
+1. Set up remote management to the Domain Controller
+    ```shell
+    Start-Service WinRM
+    ```
+    ```shell
+    set-item wsman:\localhost\Client\TrustedHosts -value 192.168.179.199
+    ```
+
+2. Set up a variable for a Power Shell session to the Domain Controller
+    ```shell
+    $dc = New-PSSession -ComputerName 192.168.179.199 -Credential (Get-Credential)
+    ```
+
+3. Enter the Domain Controller through the remote session
+    ```shell
+    Enter-PSSession $dc
+    ```
+
 
 # Setting up Domain Workstation
 
@@ -28,13 +48,11 @@ install-ADDSForest
     Get-DNSClientServerAddress
     ```
     ```shell
-    Set-DNSClientServerAddress -InterfaceIndex `5` -ServerAddresses `192.168.179.199`
+    Set-DNSClientServerAddress -InterfaceIndex 5 -ServerAddresses 192.168.179.199
     ```
 
 2. Add the Workstation to the domain
     ```shell
     Add-Computer -DomainName adtest.local -Credential adtest\Administrator -Force -Restart
     ```
-
-
-Add-Computer -DomainName adtest.local -Credential adtest\Administrator -Force -Restart
+    
