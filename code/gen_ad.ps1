@@ -7,6 +7,13 @@ function CreateADGroup(){
     New-ADGroup -name $name -GroupScope Global
 }
 
+function RemoveADGroup(){
+    param([Parameter(Mandatory=$true)] $groupObject)
+
+    $name = $groupObject.name
+    Remove-ADGroup -Identity $name -Confirm:$False
+}
+
 function CreateADUser(){
     param([Parameter(Mandatory=$true)] $userObject)
     
@@ -33,6 +40,14 @@ function CreateADUser(){
             Write-Warning "User $name not added to the group $groupName because this group does not exist."
         }
     }
+}
+
+# Changes the Password Complexity to 0
+function weakenPasswordPolicy() {
+    secedit /export /cfg c:\Windows\Tasks\secpol.cfg
+    (Get-Content C:\Windows\Tasks\secpol.cfg).replace("PasswordComplexity = 1", "PasswordComplexity = 0") | Out-File C:\secpol.cfg
+    secedit /configure /db c:\windows\security\local.sdb /cfg c:\Windows\Tasks\secpol.cfg /areas SECURITYPOLICY
+    rm -force c:\Windows\Tasks\secpol.cfg -confirm:$false
 }
 
 $json = (Get-Content $JSONFile | ConvertFrom-JSON)
