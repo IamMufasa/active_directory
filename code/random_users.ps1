@@ -1,4 +1,4 @@
-param([Parameter(Mandatory=$true)] $OutputJSONFile)
+param([Parameter(Mandatory=$true)] $OutputJSONFile, [int]$userCount, [int]$groupCount)
 
 # gather variables from the data directory
 $groupNames = [System.Collections.ArrayList](Get-Content "data/group_names.txt")
@@ -10,9 +10,18 @@ $passwords = [System.Collections.ArrayList](Get-Content "data/passwords.txt")
 $groups = @()
 $users = @()
 
-# generate 10 groups
-$numGroups = 10
-for ($i =0; $i -lt $numGroups; $i++){
+# Default UserCount set to 5 (if not set)
+if ( $UserCount -eq 0 ){
+    $UserCount = 5
+}
+
+# Default GroupCount set to 5 (if not set)
+if ( $GroupCount -eq 0 ){
+    $GroupCount = 1
+}
+
+# generate random groups
+for ($i =0; $i -lt $groupCount; $i++){
     $groupName = (Get-Random -InputObject $groupNames)
     $group = @{"name"="$groupName"}
     $groups += $group
@@ -22,8 +31,7 @@ for ($i =0; $i -lt $numGroups; $i++){
 }
 
 # generate random users
-$numUsers = 100
-for ($i =0; $i -lt $numUsers; $i++){
+for ($i =0; $i -lt $userCount; $i++){
     $firstName = (Get-Random -InputObject $firstNames)
     $lastName = (Get-Random -InputObject $lastNames)
     $password = (Get-Random -InputObject $passwords)
@@ -42,8 +50,8 @@ for ($i =0; $i -lt $numUsers; $i++){
     $passwords.Remove($password)
 }
 
-echo @{
+ConvertTo-Json -InputObject @{
     "domain"="adtest.local"
     "groups"=$groups
     "users"=$users
-} | ConvertTo-Json | Out-File $OutputJSONFile
+} | Out-File $OutputJSONFile
