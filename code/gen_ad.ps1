@@ -42,13 +42,34 @@ function CreateADUser(){
     }
 }
 
-# Changes the Password Complexity to 0
+function RemoveADUser(){
+    param([Parameter(Mandatory=$true)] $userObject)
+
+    $firstName, $lastName = $name.Split(" ")
+    $username = ($firstName[0] + $lastName).ToLower()
+    $samAccountName = $username
+
+    $name = $userObject.name
+    Remove-ADUser -Identity $samAccountName -Confirm:$False
+}
+
+# Changes the Password Complexity and length for later pentesting
 function weakenPasswordPolicy() {
     secedit /export /cfg c:\Windows\Tasks\secpol.cfg
-    (Get-Content C:\Windows\Tasks\secpol.cfg).replace("PasswordComplexity = 1", "PasswordComplexity = 0") | Out-File C:\secpol.cfg
+    (Get-Content C:\Windows\Tasks\secpol.cfg).replace("PasswordComplexity = 1", "PasswordComplexity = 0").replace("MinimumPasswordLength = 7", "MinimumPasswordLength = 1") | Out-File C:\Windows\Tasks\secpol.cfg
     secedit /configure /db c:\windows\security\local.sdb /cfg c:\Windows\Tasks\secpol.cfg /areas SECURITYPOLICY
     rm -force c:\Windows\Tasks\secpol.cfg -confirm:$false
 }
+
+# Changes the Password Complexity to 0 for later pentesting
+function stregthenPasswordPolicy() {
+    secedit /export /cfg c:\Windows\Tasks\secpol.cfg
+    (Get-Content C:\Windows\Tasks\secpol.cfg).replace("PasswordComplexity = 0", "PasswordComplexity = 1").replace("MinimumPasswordLength = 1", "MinimumPasswordLength = 7") | Out-File C:\Windows\Tasks\secpol.cfg
+    secedit /configure /db c:\windows\security\local.sdb /cfg c:\Windows\Tasks\secpol.cfg /areas SECURITYPOLICY
+    rm -force c:\Windows\Tasks\secpol.cfg -confirm:$false
+}
+
+weakenPasswordPolicy
 
 $json = (Get-Content $JSONFile | ConvertFrom-JSON)
 
