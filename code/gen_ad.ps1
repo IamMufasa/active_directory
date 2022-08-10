@@ -61,7 +61,7 @@ function weakenPasswordPolicy() {
     rm -force c:\Windows\Tasks\secpol.cfg -confirm:$false
 }
 
-# Changes the Password Complexity to 0 for later pentesting
+# Changes the Password Complexity back
 function stregthenPasswordPolicy() {
     secedit /export /cfg c:\Windows\Tasks\secpol.cfg
     (Get-Content C:\Windows\Tasks\secpol.cfg).replace("PasswordComplexity = 0", "PasswordComplexity = 1").replace("MinimumPasswordLength = 1", "MinimumPasswordLength = 7") | Out-File C:\Windows\Tasks\secpol.cfg
