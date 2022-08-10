@@ -1,0 +1,537 @@
+﻿{
+    "domain":  "adtest.local",
+    "users":  [
+                  {
+                      "groups":  "Executives",
+                      "name":  "Jennifer Morgan",
+                      "password":  "january"
+                  },
+                  {
+                      "groups":  "Executives",
+                      "name":  "Mary Hardacre",
+                      "password":  "jesus1"
+                  },
+                  {
+                      "groups":  "Executives",
+                      "name":  "Alan Carr",
+                      "password":  "chrisbrown"
+                  },
+                  {
+                      "groups":  "Sales",
+                      "name":  "Jason Alsop",
+                      "password":  "harrypotter"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Adam May",
+                      "password":  "travis"
+                  },
+                  {
+                      "groups":  "Developers",
+                      "name":  "Carol Black",
+                      "password":  "cutiepie"
+                  },
+                  {
+                      "groups":  "HR",
+                      "name":  "Wanda James",
+                      "password":  "flower"
+                  },
+                  {
+                      "groups":  "Managers",
+                      "name":  "Matt Walsh",
+                      "password":  "dancer"
+                  },
+                  {
+                      "groups":  "Developers",
+                      "name":  "Leah McGrath",
+                      "password":  "princesa"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Samantha Blake",
+                      "password":  "ginger"
+                  },
+                  {
+                      "groups":  "Sales",
+                      "name":  "Amy Hamilton",
+                      "password":  "honey"
+                  },
+                  {
+                      "groups":  "Executives",
+                      "name":  "Dan Wright",
+                      "password":  "smiley"
+                  },
+                  {
+                      "groups":  "Executives",
+                      "name":  "Anthony Langdon",
+                      "password":  "cameron"
+                  },
+                  {
+                      "groups":  "Sales",
+                      "name":  "Rachel Morrison",
+                      "password":  "isabel"
+                  },
+                  {
+                      "groups":  "Executives",
+                      "name":  "Oliver Buckland",
+                      "password":  "michael"
+                  },
+                  {
+                      "groups":  "Managers",
+                      "name":  "Amelia Paige",
+                      "password":  "james"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Thomas Powell",
+                      "password":  "november"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Olivia Parr",
+                      "password":  "iloveyou1"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Sean Newman",
+                      "password":  "amorcito"
+                  },
+                  {
+                      "groups":  "Managers",
+                      "name":  "Katherine Robertson",
+                      "password":  "michelle"
+                  },
+                  {
+                      "groups":  "Managers",
+                      "name":  "Julia Piper",
+                      "password":  "rockstar"
+                  },
+                  {
+                      "groups":  "Executives",
+                      "name":  "Una Reid",
+                      "password":  "123456"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Luke Knox",
+                      "password":  "cookies"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Neil Clark",
+                      "password":  "mahal"
+                  },
+                  {
+                      "groups":  "Managers",
+                      "name":  "Sally Abraham",
+                      "password":  "marvin"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Steven Young",
+                      "password":  "lauren"
+                  },
+                  {
+                      "groups":  "Sales",
+                      "name":  "Max Mathis",
+                      "password":  "232323"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Trevor Kerr",
+                      "password":  "hottie"
+                  },
+                  {
+                      "groups":  "Sales",
+                      "name":  "Karen Lyman",
+                      "password":  "cutie"
+                  },
+                  {
+                      "groups":  "Executives",
+                      "name":  "Nicholas Tucker",
+                      "password":  "shannon"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Brandon Watson",
+                      "password":  "jeffrey"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Emily Bower",
+                      "password":  "iloveme"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Madeleine Grant",
+                      "password":  "secret"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Ava Nolan",
+                      "password":  "adrian"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Joe Sutherland",
+                      "password":  "benfica"
+                  },
+                  {
+                      "groups":  "Executives",
+                      "name":  "Eric Hudson",
+                      "password":  "andrea"
+                  },
+                  {
+                      "groups":  "HR",
+                      "name":  "Jessica Hemmings",
+                      "password":  "gatita"
+                  },
+                  {
+                      "groups":  "Executives",
+                      "name":  "Penelope Rampling",
+                      "password":  "mybaby"
+                  },
+                  {
+                      "groups":  "Managers",
+                      "name":  "Frank Vaughan",
+                      "password":  "alexander"
+                  },
+                  {
+                      "groups":  "Executives",
+                      "name":  "Chloe Sharp",
+                      "password":  "111111"
+                  },
+                  {
+                      "groups":  "Sales",
+                      "name":  "Melanie Dowd",
+                      "password":  "daniel"
+                  },
+                  {
+                      "groups":  "Sales",
+                      "name":  "Evan Fisher",
+                      "password":  "leslie"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Wendy Turner",
+                      "password":  "loveme"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Ella Springer",
+                      "password":  "christine"
+                  },
+                  {
+                      "groups":  "Executives",
+                      "name":  "Paul Metcalfe",
+                      "password":  "loveyou"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Stephen MacLeod",
+                      "password":  "popcorn"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Audrey Simpson",
+                      "password":  "angelito"
+                  },
+                  {
+                      "groups":  "Managers",
+                      "name":  "Harry Avery",
+                      "password":  "softball"
+                  },
+                  {
+                      "groups":  "Executives",
+                      "name":  "Theresa North",
+                      "password":  "kisses"
+                  },
+                  {
+                      "groups":  "Executives",
+                      "name":  "Colin Randall",
+                      "password":  "purple"
+                  },
+                  {
+                      "groups":  "Developers",
+                      "name":  "Nathan Hunter",
+                      "password":  "ashley"
+                  },
+                  {
+                      "groups":  "Sales",
+                      "name":  "Michelle Payne",
+                      "password":  "654321"
+                  },
+                  {
+                      "groups":  "Sales",
+                      "name":  "Isaac Gill",
+                      "password":  "fluffy"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Diana Davies",
+                      "password":  "rachel"
+                  },
+                  {
+                      "groups":  "Sales",
+                      "name":  "Liam Mills",
+                      "password":  "tiffany"
+                  },
+                  {
+                      "groups":  "Sales",
+                      "name":  "Zoe Gray",
+                      "password":  "raymond"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Christian Bond",
+                      "password":  "patrick"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Kimberly Underwood",
+                      "password":  "destiny"
+                  },
+                  {
+                      "groups":  "Sales",
+                      "name":  "Caroline Parsons",
+                      "password":  "edward"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Michael Arnold",
+                      "password":  "austin"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Bella Butler",
+                      "password":  "mickey"
+                  },
+                  {
+                      "groups":  "Executives",
+                      "name":  "Robert Fraser",
+                      "password":  "cheese"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Kevin Gibson",
+                      "password":  "barbie"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Virginia Miller",
+                      "password":  "jason"
+                  },
+                  {
+                      "groups":  "Developers",
+                      "name":  "Charles Russell",
+                      "password":  "sakura"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Lisa Hughes",
+                      "password":  "fernando"
+                  },
+                  {
+                      "groups":  "Developers",
+                      "name":  "Stephanie Graham",
+                      "password":  "000000"
+                  },
+                  {
+                      "groups":  "Managers",
+                      "name":  "Keith Mackay",
+                      "password":  "987654"
+                  },
+                  {
+                      "groups":  "Developers",
+                      "name":  "Austin Stewart",
+                      "password":  "sweety"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "James Allan",
+                      "password":  "maggie"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Bernadette Edmunds",
+                      "password":  "babyblue"
+                  },
+                  {
+                      "groups":  "Sales",
+                      "name":  "Dorothy McDonald",
+                      "password":  "manchester"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Donna Manning",
+                      "password":  "computer"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Kylie Lawrence",
+                      "password":  "121212"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Sonia Scott",
+                      "password":  "password1"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Natalie Terry",
+                      "password":  "sexygirl"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Megan Johnston",
+                      "password":  "peanut"
+                  },
+                  {
+                      "groups":  "Developers",
+                      "name":  "Jack Henderson",
+                      "password":  "butterfly"
+                  },
+                  {
+                      "groups":  "Managers",
+                      "name":  "Benjamin Wilson",
+                      "password":  "diana"
+                  },
+                  {
+                      "groups":  "Developers",
+                      "name":  "Joseph Forsyth",
+                      "password":  "welcome"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Emma Paterson",
+                      "password":  "heather"
+                  },
+                  {
+                      "groups":  "Developers",
+                      "name":  "Sebastian Short",
+                      "password":  "patricia"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Gavin Ball",
+                      "password":  "andrew"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Felicity Hill",
+                      "password":  "jackson"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Julian Greene",
+                      "password":  "benjamin"
+                  },
+                  {
+                      "groups":  "Developers",
+                      "name":  "Christopher Dyer",
+                      "password":  "master"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Simon Mackenzie",
+                      "password":  "steaua"
+                  },
+                  {
+                      "groups":  "Managers",
+                      "name":  "David Thomson",
+                      "password":  "karen"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Stewart Rees",
+                      "password":  "samuel"
+                  },
+                  {
+                      "groups":  "Developers",
+                      "name":  "Claire Smith",
+                      "password":  "batman"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Lily Burgess",
+                      "password":  "rebelde"
+                  },
+                  {
+                      "groups":  "Developers",
+                      "name":  "Sue Nash",
+                      "password":  "iloveyou"
+                  },
+                  {
+                      "groups":  "Sales",
+                      "name":  "Warren Cornish",
+                      "password":  "charles"
+                  },
+                  {
+                      "groups":  "Developers",
+                      "name":  "Alison McLean",
+                      "password":  "christopher"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Ryan Ross",
+                      "password":  "eduardo"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Elizabeth Lambert",
+                      "password":  "freedom"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Jane Skinner",
+                      "password":  "blondie"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Adrian Mitchell",
+                      "password":  "christ"
+                  },
+                  {
+                      "groups":  "Personnel",
+                      "name":  "Ian White",
+                      "password":  "stephanie"
+                  },
+                  {
+                      "groups":  "Operations",
+                      "name":  "Pippa Vance",
+                      "password":  "teamo"
+                  }
+              ],
+    "groups":  [
+                   {
+                       "name":  "Developers"
+                   },
+                   {
+                       "name":  "Personnel"
+                   },
+                   {
+                       "name":  "Managers"
+                   },
+                   {
+                       "name":  "Executives"
+                   },
+                   {
+                       "name":  "Sales"
+                   },
+                   {
+                       "name":  "Personnel"
+                   },
+                   {
+                       "name":  "Operations"
+                   },
+                   {
+                       "name":  "Executives"
+                   },
+                   {
+                       "name":  "HR"
+                   },
+                   {
+                       "name":  "Operations"
+                   }
+               ]
+}
