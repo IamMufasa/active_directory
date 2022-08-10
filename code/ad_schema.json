@@ -1,18 +1,25 @@
 {
+    "domain": "adtest.local",
+
     "groups" : [
         {
-            "name": "Engineering"
+            "name": "Employee"
         }
     ],
-    
+
     "users": [
         {
-            "first_name": "Edward",
-            "last_name": "Harley",
-            "username": "eharley",
-            "password": "supersecure",
+            "name": "Edward Harley",
+            "password": "P@ssw0rd789",
             "groups": [
-                "Engineering"
+                "Employee"
+            ]
+        },
+        {
+            "name": "Alice Lice",
+            "password": "P@ssw0rdABC",
+            "groups": [
+                "Employee"
             ]
         }
     ]
