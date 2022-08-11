@@ -1,20 +1,23 @@
-param([Parameter(Mandatory=$true)] $JSONFile)
+param(
+    [Parameter(Mandatory=$true)] $JSONFile,
+    [switch]$undo    
+)
 
-function CreateADGroup(){
+function createADGroup(){
     param([Parameter(Mandatory=$true)] $groupObject)
 
     $name = $groupObject.name
     New-ADGroup -name $name -GroupScope Global
 }
 
-function RemoveADGroup(){
+function removeADGroup(){
     param([Parameter(Mandatory=$true)] $groupObject)
 
     $name = $groupObject.name
     Remove-ADGroup -Identity $name -Confirm:$False
 }
 
-function CreateADUser(){
+function createADUser(){
     param([Parameter(Mandatory=$true)] $userObject)
     
     # Pull out variables from the JSON object
@@ -42,14 +45,13 @@ function CreateADUser(){
     }
 }
 
-function RemoveADUser(){
+function removeADUser(){
     param([Parameter(Mandatory=$true)] $userObject)
-
+    $name = $userObject.name
     $firstName, $lastName = $name.Split(" ")
     $username = ($firstName[0] + $lastName).ToLower()
     $samAccountName = $username
 
-    $name = $userObject.name
     Remove-ADUser -Identity $samAccountName -Confirm:$False
 }
 
@@ -69,16 +71,20 @@ function stregthenPasswordPolicy() {
     rm -force c:\Windows\Tasks\secpol.cfg -confirm:$false
 }
 
-weakenPasswordPolicy
-
 $json = (Get-Content $JSONFile | ConvertFrom-JSON)
-
 $Global:Domain = $json.domain
 
-foreach ( $group in $json.groups){
-    createADGroup $group
-}
-
-foreach($user in $json.users){
-    CreateADUser $user
+# weaken password policy and create users and groups
+if(-not $undo) {
+    weakenPasswordPolicy
+    foreach ( $group in $json.groups){
+        createADGroup $group}
+    foreach($user in $json.users){
+        createADUser $user}
+}else{
+    stregthenPasswordPolicy
+    foreach($user in $json.users){
+        removeADUser $user}
+    foreach ( $group in $json.groups){
+        removeADGroup $group}
 }
