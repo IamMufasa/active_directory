@@ -1,4 +1,4 @@
-# This code is designed to automate the creation of domain users for Windows Active Directory
+# This code found in this repository is designed to automate the creation of domain users for Windows Active Directory
 
 The `gen_ad.ps1` script can be used in combination with a JSON file to generate domain users and groups.
 
