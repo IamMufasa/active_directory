@@ -1,6 +1,6 @@
 # CrackMapExec
 
-CrackMapExec is a post-exploitation tool that I will us in a Kali Linux Virtual Machine to test active directory enumeration and brute force cracking techniques.
+CrackMapExec is a post-exploitation tool that I will us in a Kali Linux Virtual Machine to test active directory enumeration and brute force cracking techniques. The CrackMapExec GitBook can be found [here](https://wiki.porchetta.industries/).
 
 ## Techniques tested
  * [System Information Discovery](https://attack.mitre.org/techniques/T1082/)
@@ -13,7 +13,7 @@ CrackMapExec is a post-exploitation tool that I will us in a Kali Linux Virtual 
 ```shell
  crackmapexec smb targets.txt -u users.txt -p passwords.txt
  ```
-It is possible to add ` | grep +` or ` > passwordspray.txt` at the end of the command to grab only valid credentials or store the results in a text document.
+It is possible to add ` | grep +` or ` > passwordspray.txt` at the end of the command to grab only valid credentials or store the results in a text document for later viewing.
 
 * [Account Discovery (local and domain)](https://attack.mitre.org/techniques/T1087/)
 ```shell
