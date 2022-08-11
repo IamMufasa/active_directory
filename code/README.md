@@ -6,5 +6,5 @@ The `ad_schema.json` file offers the schema of how the JSON files are structured
 
 The `random_users.ps1` script can be used with data pulled from the active_directory\data directory to randomize the creation of domain users. See the command parameters below.
 ```shell
-.\random_users.ps1 randomFile.json (users) (groups)
+.\random_users.ps1 (OutputFile.json) (users) (groups)
 ```
