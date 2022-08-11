@@ -20,6 +20,8 @@ import-Module ADDSDeployment
 install-ADDSForest
 ```
 
+*I recommend taking a snapshot of the Domain Controller once AD is installed and another snapshot once the workstation has been added to the domain.*
+
 # Setting up Management Client
 
 1. Set up remote management to the Domain Controller
@@ -55,4 +57,3 @@ install-ADDSForest
     ```shell
     Add-Computer -DomainName adtest.local -Credential adtest\Administrator -Force -Restart
     ```
-    
