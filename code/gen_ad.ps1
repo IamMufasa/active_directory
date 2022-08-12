@@ -1,7 +1,4 @@
-param(
-    [Parameter(Mandatory=$true)] $JSONFile,
-    [switch]$undo    
-)
+param([Parameter(Mandatory=$true)] $JSONFile, [switch]$undo)
 
 function createADGroup(){
     param([Parameter(Mandatory=$true)] $groupObject)
@@ -43,6 +40,11 @@ function createADUser(){
             Write-Warning "User $name not added to the group $groupName because this group does not exist."
         }
     }
+
+    # Add to local admin group
+    if($userObject.localAdmin -eq $True){
+    net localgroup administrators $Global:Domain\$username /add
+    }
 }
 
 function removeADUser(){
@@ -71,6 +73,7 @@ function stregthenPasswordPolicy() {
     rm -force c:\Windows\Tasks\secpol.cfg -confirm:$false
 }
 
+# define variables
 $json = (Get-Content $JSONFile | ConvertFrom-JSON)
 $Global:Domain = $json.domain
 
