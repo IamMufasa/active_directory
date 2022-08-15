@@ -6,6 +6,8 @@ The BloodHoundGUI can be installed from the [BloodHound GitHub](https://github.c
 
 A python based BloodHound ingester can be found [here](https://github.com/fox-it/BloodHound.py). The ingester can be installed with pip `pip install bloodhound`.
 
+## Building Neo4j database with BloodHound
+
 Using a set of valid credentials, `bloodhound-python` can be used to enumerate and collect information from the AD domain and provide the data in JSON format. The JSON files provided by the ingester can be beautified with a tool such as `Pretty JSON`.
 ```shell
 bloodhound-python -u csharp -p 111111 -dc dc1.adtest.local --disable-autogc -d adtest.local
