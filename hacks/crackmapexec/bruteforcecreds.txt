@@ -1,0 +1,11 @@
+SMB         192.168.179.199 445    DC1              [+] adtest.local\acarr:chrisbrown 
+SMB         192.168.179.199 445    DC1              [+] adtest.local\ahamilton:honey 
+SMB         192.168.179.199 445    DC1              [+] adtest.local\alangdon:cameron 
+SMB         192.168.179.199 445    DC1              [+] adtest.local\amay:travis 
+SMB         192.168.179.199 445    DC1              [+] adtest.local\amclean:christopher 
+SMB         192.168.179.199 445    DC1              [+] adtest.local\amitchell:christ 
+SMB         192.168.179.199 445    DC1              [+] adtest.local\anolan:adrian 
+SMB         192.168.179.199 445    DC1              [+] adtest.local\apaige:james 
+SMB         192.168.179.199 445    DC1              [+] adtest.local\asimpson:angelito 
+SMB         192.168.179.199 445    DC1              [+] adtest.local\astewart:sweety 
+SMB         192.168.179.199 445    DC1              [+] adtest.local\bbutler:mickey 

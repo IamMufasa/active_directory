@@ -1,0 +1,327 @@
+{
+    "data":
+    [
+        {
+            "ObjectIdentifier": "S-1-5-21-867427509-3558301646-3689168966-1000",
+            "AllowedToAct":
+            [],
+            "PrimaryGroupSID": "S-1-5-21-867427509-3558301646-3689168966-516",
+            "LocalAdmins":
+            {
+                "Collected": true,
+                "FailureReason": null,
+                "Results":
+                [
+                    {
+                        "ObjectIdentifier": "S-1-5-21-867427509-3558301646-3689168966-500",
+                        "ObjectType": "User"
+                    },
+                    {
+                        "ObjectIdentifier": "S-1-5-21-867427509-3558301646-3689168966-519",
+                        "ObjectType": "Group"
+                    },
+                    {
+                        "ObjectIdentifier": "S-1-5-21-867427509-3558301646-3689168966-512",
+                        "ObjectType": "Group"
+                    }
+                ]
+            },
+            "PSRemoteUsers":
+            {
+                "Collected": true,
+                "FailureReason": null,
+                "Results":
+                []
+            },
+            "Properties":
+            {
+                "name": "DC1.ADTEST.LOCAL",
+                "domainsid": "S-1-5-21-867427509-3558301646-3689168966",
+                "domain": "ADTEST.LOCAL",
+                "distinguishedname": "CN=DC1,OU=DOMAIN CONTROLLERS,DC=ADTEST,DC=LOCAL",
+                "unconstraineddelegation": true,
+                "enabled": true,
+                "trustedtoauth": false,
+                "samaccountname": "DC1$",
+                "haslaps": false,
+                "lastlogon": 1660516057,
+                "lastlogontimestamp": 1660138954,
+                "pwdlastset": 1660138942,
+                "whencreated": 1660138914,
+                "serviceprincipalnames":
+                [
+                    "Dfsr-12F9A27C-BF97-4787-9364-D31B6C55EB04/DC1.adtest.local",
+                    "ldap/DC1.adtest.local/ForestDnsZones.adtest.local",
+                    "ldap/DC1.adtest.local/DomainDnsZones.adtest.local",
+                    "DNS/DC1.adtest.local",
+                    "GC/DC1.adtest.local/adtest.local",
+                    "RestrictedKrbHost/DC1.adtest.local",
+                    "RestrictedKrbHost/DC1",
+                    "RPC/216bfe3c-b19d-4993-8e4a-95a204dc9ece._msdcs.adtest.local",
+                    "HOST/DC1/ADTEST",
+                    "HOST/DC1.adtest.local/ADTEST",
+                    "HOST/DC1",
+                    "HOST/DC1.adtest.local",
+                    "HOST/DC1.adtest.local/adtest.local",
+                    "E3514235-4B06-11D1-AB04-00C04FC2DCD2/216bfe3c-b19d-4993-8e4a-95a204dc9ece/adtest.local",
+                    "ldap/DC1/ADTEST",
+                    "ldap/216bfe3c-b19d-4993-8e4a-95a204dc9ece._msdcs.adtest.local",
+                    "ldap/DC1.adtest.local/ADTEST",
+                    "ldap/DC1",
+                    "ldap/DC1.adtest.local",
+                    "ldap/DC1.adtest.local/adtest.local"
+                ],
+                "description": null,
+                "operatingsystem": "Windows Server 2022 Standard Evaluation",
+                "sidhistory":
+                []
+            },
+            "RemoteDesktopUsers":
+            {
+                "Collected": true,
+                "FailureReason": null,
+                "Results":
+                []
+            },
+            "DcomUsers":
+            {
+                "Collected": true,
+                "FailureReason": null,
+                "Results":
+                []
+            },
+            "AllowedToDelegate":
+            [],
+            "Sessions":
+            {
+                "Collected": true,
+                "FailureReason": null,
+                "Results":
+                []
+            },
+            "PrivilegedSessions":
+            {
+                "Collected": false,
+                "FailureReason": null,
+                "Results":
+                []
+            },
+            "RegistrySessions":
+            {
+                "Collected": false,
+                "FailureReason": null,
+                "Results":
+                []
+            },
+            "Aces":
+            [
+                {
+                    "RightName": "Owns",
+                    "IsInherited": false,
+                    "PrincipalSID": "S-1-5-21-867427509-3558301646-3689168966-512",
+                    "PrincipalType": "Group"
+                },
+                {
+                    "RightName": "GenericAll",
+                    "IsInherited": false,
+                    "PrincipalSID": "S-1-5-21-867427509-3558301646-3689168966-512",
+                    "PrincipalType": "Group"
+                },
+                {
+                    "RightName": "AddKeyCredentialLink",
+                    "IsInherited": true,
+                    "PrincipalSID": "S-1-5-21-867427509-3558301646-3689168966-526",
+                    "PrincipalType": "Group"
+                },
+                {
+                    "RightName": "AddKeyCredentialLink",
+                    "IsInherited": true,
+                    "PrincipalSID": "S-1-5-21-867427509-3558301646-3689168966-527",
+                    "PrincipalType": "Group"
+                },
+                {
+                    "RightName": "GenericAll",
+                    "IsInherited": true,
+                    "PrincipalSID": "S-1-5-21-867427509-3558301646-3689168966-519",
+                    "PrincipalType": "Group"
+                },
+                {
+                    "RightName": "GenericWrite",
+                    "IsInherited": true,
+                    "PrincipalSID": "ADTEST.LOCAL-S-1-5-32-544",
+                    "PrincipalType": "Group"
+                },
+                {
+                    "RightName": "WriteOwner",
+                    "IsInherited": true,
+                    "PrincipalSID": "ADTEST.LOCAL-S-1-5-32-544",
+                    "PrincipalType": "Group"
+                },
+                {
+                    "RightName": "WriteDacl",
+                    "IsInherited": true,
+                    "PrincipalSID": "ADTEST.LOCAL-S-1-5-32-544",
+                    "PrincipalType": "Group"
+                }
+            ],
+            "HasSIDHistory":
+            [],
+            "IsDeleted": false,
+            "Status": null,
+            "IsACLProtected": false
+        },
+        {
+            "ObjectIdentifier": "S-1-5-21-867427509-3558301646-3689168966-1601",
+            "AllowedToAct":
+            [],
+            "PrimaryGroupSID": "S-1-5-21-867427509-3558301646-3689168966-515",
+            "LocalAdmins":
+            {
+                "Collected": false,
+                "FailureReason": null,
+                "Results":
+                []
+            },
+            "PSRemoteUsers":
+            {
+                "Collected": false,
+                "FailureReason": null,
+                "Results":
+                []
+            },
+            "Properties":
+            {
+                "name": "DESKTOP-Q5JGQOL.ADTEST.LOCAL",
+                "domainsid": "S-1-5-21-867427509-3558301646-3689168966",
+                "domain": "ADTEST.LOCAL",
+                "distinguishedname": "CN=DESKTOP-Q5JGQOL,CN=COMPUTERS,DC=ADTEST,DC=LOCAL",
+                "unconstraineddelegation": false,
+                "enabled": true,
+                "trustedtoauth": false,
+                "samaccountname": "DESKTOP-Q5JGQOL$",
+                "haslaps": false,
+                "lastlogon": 1660222198,
+                "lastlogontimestamp": 1660157597,
+                "pwdlastset": 1660157597,
+                "whencreated": 1660157597,
+                "serviceprincipalnames":
+                [
+                    "RestrictedKrbHost/DESKTOP-Q5JGQOL",
+                    "HOST/DESKTOP-Q5JGQOL",
+                    "RestrictedKrbHost/DESKTOP-Q5JGQOL.adtest.local",
+                    "HOST/DESKTOP-Q5JGQOL.adtest.local"
+                ],
+                "description": null,
+                "operatingsystem": "Windows 11 Pro",
+                "sidhistory":
+                []
+            },
+            "RemoteDesktopUsers":
+            {
+                "Collected": false,
+                "FailureReason": null,
+                "Results":
+                []
+            },
+            "DcomUsers":
+            {
+                "Collected": false,
+                "FailureReason": null,
+                "Results":
+                []
+            },
+            "AllowedToDelegate":
+            [],
+            "Sessions":
+            {
+                "Collected": false,
+                "FailureReason": null,
+                "Results":
+                []
+            },
+            "PrivilegedSessions":
+            {
+                "Collected": false,
+                "FailureReason": null,
+                "Results":
+                []
+            },
+            "RegistrySessions":
+            {
+                "Collected": false,
+                "FailureReason": null,
+                "Results":
+                []
+            },
+            "Aces":
+            [
+                {
+                    "RightName": "Owns",
+                    "IsInherited": false,
+                    "PrincipalSID": "S-1-5-21-867427509-3558301646-3689168966-512",
+                    "PrincipalType": "Group"
+                },
+                {
+                    "RightName": "GenericAll",
+                    "IsInherited": false,
+                    "PrincipalSID": "S-1-5-21-867427509-3558301646-3689168966-512",
+                    "PrincipalType": "Group"
+                },
+                {
+                    "RightName": "GenericAll",
+                    "IsInherited": false,
+                    "PrincipalSID": "ADTEST.LOCAL-S-1-5-32-548",
+                    "PrincipalType": "Group"
+                },
+                {
+                    "RightName": "AddKeyCredentialLink",
+                    "IsInherited": true,
+                    "PrincipalSID": "S-1-5-21-867427509-3558301646-3689168966-526",
+                    "PrincipalType": "Group"
+                },
+                {
+                    "RightName": "AddKeyCredentialLink",
+                    "IsInherited": true,
+                    "PrincipalSID": "S-1-5-21-867427509-3558301646-3689168966-527",
+                    "PrincipalType": "Group"
+                },
+                {
+                    "RightName": "GenericAll",
+                    "IsInherited": true,
+                    "PrincipalSID": "S-1-5-21-867427509-3558301646-3689168966-519",
+                    "PrincipalType": "Group"
+                },
+                {
+                    "RightName": "GenericWrite",
+                    "IsInherited": true,
+                    "PrincipalSID": "ADTEST.LOCAL-S-1-5-32-544",
+                    "PrincipalType": "Group"
+                },
+                {
+                    "RightName": "WriteOwner",
+                    "IsInherited": true,
+                    "PrincipalSID": "ADTEST.LOCAL-S-1-5-32-544",
+                    "PrincipalType": "Group"
+                },
+                {
+                    "RightName": "WriteDacl",
+                    "IsInherited": true,
+                    "PrincipalSID": "ADTEST.LOCAL-S-1-5-32-544",
+                    "PrincipalType": "Group"
+                }
+            ],
+            "HasSIDHistory":
+            [],
+            "IsDeleted": false,
+            "Status": null,
+            "IsACLProtected": false
+        }
+    ],
+    "meta":
+    {
+        "methods": 0,
+        "type": "computers",
+        "count": 2,
+        "version": 5
+    }
+}
