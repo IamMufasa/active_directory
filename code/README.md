@@ -1,4 +1,4 @@
-# This code found in this repository is designed to automate the creation of domain users for Windows Active Directory
+# The code found in this repository is designed to automate the creation of domain users for Windows Active Directory.
 
 The `gen_ad.ps1` script can be used in combination with a JSON file to generate domain users, domain local groups, and local administrator accounts on the domain controller. The `-Undo` parameter may be added to this script to reverse any changes made.
 
